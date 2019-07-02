@@ -1,0 +1,10 @@
+extends templates/layout
+
+block content
+  h1="🎬Add Movie"
+  .form__container
+    form(action="/add", method="POST")
+      input(type="text" name="title" placeholder="Add title")
+      input(type="text" name="synopsis" placeholder="Add synopsis")
+      input(type="text" name="genre" placeholder="Add genre")
+      input(type="submit" value="Add!")
